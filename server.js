@@ -25,7 +25,7 @@ AV.init({
 app.use(AV.express())
 
 // root router
-app.get('/', (req, res) => res.send('hello world'))
+app.get('/', (req, res) => res.send('hello world !'))
 
 // movie-canlendar
 app.get('/movie-calendar', function (req, res) {
