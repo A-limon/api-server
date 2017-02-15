@@ -54,7 +54,6 @@ app.get('/movie-calendar', function (req, res) {
 	}
 	movieCalendarQuery.equalTo('date', month + '月' + date + '日')
 	movieCalendarQuery.find().then(function (results) {
-		console.log(results)
 		if (results && results.length > 0) {
 			res.send(results[0].attributes)
 		} else {
